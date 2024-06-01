@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: MavincciCMS
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:11306/mavincci_cms_be
+    username: root
+    password: root1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  servlet:
+    multipart:
+      max-file-size: 31457280
+      max-request-size: 31457280
+
+server:
+  port: 1080
+
+springdoc:
+  api-docs:
+    path: /api-doc
+  swagger-ui:
+    path: /api-doc.html
