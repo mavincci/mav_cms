@@ -8,10 +8,10 @@ spring:
     show-sql: true
 
   datasource:
-    url: jdbc:mysql://localhost:11306/mavincci_cms_be
+    url: jdbc:postgresql://localhost:1432/mavincci_cms_be
     username: root
     password: root1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
 
   servlet:
     multipart:
